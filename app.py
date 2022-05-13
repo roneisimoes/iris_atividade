@@ -9,9 +9,9 @@ st.write("## Exemplo com comprimento de petala e sépala")
 
 st.sidebar.write("## Parâmetros")
 comp_sepala = st.sidebar.slider("Comprimento da sépala", 4.0, 8.0, 5.8, 0.1)
-comp_sepala = st.sidebar.slider("Largura da sépala", 2.0, 4.0, 3.0, 0.1)
+larg_sepala = st.sidebar.slider("Largura da sépala", 2.0, 4.0, 3.0, 0.1)
 comp_petala = st.sidebar.slider("Comprimento da pétala", 0.9, 7.0, 3.8, 0.1)
-comp_sepala = st.sidebar.slider("Largura da pétala", 0.1, 2.0, 1.0, 0.1)
+larg_petala = st.sidebar.slider("Largura da pétala", 0.1, 2.0, 1.0, 0.1)
 
 with open("objetos.pkl", "rb") as arquivo:
   ss, dtc = pickle.load(arquivo)
